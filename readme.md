@@ -1,1 +1,1 @@
-"mocha --compilers js:babel-core/register --require ./test/setup.js \"test/**/*.@(js|jsx)\""
+# redux-tdd-todo
