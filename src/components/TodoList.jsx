@@ -15,11 +15,12 @@ export default class TodoList extends PureComponent {
   getItems() {
     if (this.props.todos) {
       return this.props.todos.filter(
-        (item) => item.get('status') === this.props.filter,
+        (item) => this.props.filter === 'all' || item.get('status') === this.props.filter
       );
     }
     return [];
   }
+
   render() {
     // Only the filtered items are displayed
     const items = this.getItems();
